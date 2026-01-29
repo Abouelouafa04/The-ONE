@@ -1,0 +1,100 @@
+.hero {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay sombre */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Contenu */
+.hero__content {
+  position: relative;
+  max-width: 900px;
+  padding: 0 20px;
+  margin-left: 8%;
+  color: white;
+}
+
+.hero__content h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero__content h1 span {
+  color: #e63946;
+}
+
+.hero__content p {
+  margin: 24px 0 40px;
+  font-size: 18px;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* Boutons */
+.hero__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Bouton principal */
+.btn-primary {
+  background: #e63946;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #ff4d5a;
+  transform: translateY(-2px);
+}
+
+/* Bouton secondaire */
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero__content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero__content h1 {
+    font-size: 42px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

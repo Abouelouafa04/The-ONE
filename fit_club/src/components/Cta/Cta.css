@@ -1,0 +1,53 @@
+.contact-cta {
+  width: 100%;
+  min-height: 280px;
+  background-color: #e53935;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-overlay {
+  max-width: 800px;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.cta-overlay h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cta-overlay p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #e53935;
+  border: none;
+  padding: 14px 34px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #111;
+  color: #fff;
+  transform: translateY(-2px);
+}
